@@ -14,9 +14,12 @@ Bold: 700
 - LINE HEIGHTS:
 Default: 1
 Small: 1.05
+Medium: 1.2
 Paragraph default: 1.6
+Large: 1.8
 
 - LETTER SPACING:
+-0.5px
 0.5px
 0.75px
 
@@ -41,17 +44,27 @@ Paragraph default: 1.6
 #6f6f6f (lightest grey allowed on #fdf2e9
 #555
 #333
+#ddd
+#aaa
+#eee
 
 --- 05 SHADOWS
 box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-
+box-shadow: inset 0 0 0 3px #fff;
+box-shadow: 0 0 0 0.8rem rgb(230, 126, 34, 0.5);
+box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+box-shadow: 0 0 0 0.8rem rgb(253, 242, 233, 0.5);
 
 --- 06 BORDER-RADIUS
-
 Default: 9px
+Large: 11px
+Tag: 100px
+Circle: 50%
 
 --- 07 WHITESPACE
-
 - SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
@@ -516,7 +529,7 @@ body {
   font-weight: 600;
   font-size: 2rem;
   text-transform: uppercase;
-  letter-spacing: 0.75;
+  letter-spacing: 0.75px;
   margin-bottom: 3.2rem;
 }
 
@@ -587,7 +600,6 @@ body {
 .cta {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  /* background-color: #e67e22; */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
 
